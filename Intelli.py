@@ -8,10 +8,9 @@ from sklearn.datasets import make_classification
 from sklearn.cluster import KMeans
 
 # initialize the data set we'll work with
-url = https://github.com/kalleleander/Intellishore_prep/blob/8ee6b2413cae759c2205b02fbf3cd0f1d49a5f59/train_ctrUa4K.csv
+url = https://raw.githubusercontent.com/kalleleander/Intellishore_prep/blob/8ee6b2413cae759c2205b02fbf3cd0f1d49a5f59/train_ctrUa4K.csv
 training_data = pd.read_csv(url, index_col=0)
 print(training_data.head(5))
-
 
 # define the model
 kmeans_model = KMeans(n_clusters=2)
